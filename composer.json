@@ -1,0 +1,30 @@
+{
+    "name": "zhalil/amocrm-api-php",
+    "description": "Простая обертка для работы с API amoCRM v2 с авторизацией по протоколу oAuth 2.0 или по API-ключу пользователя, поддержкой AJAX-запросов к frontend-методам, троттлингом запросов, блокировкой одновременного обновления одной сущности и логированием запросов/ответов к API в файл",
+    "keywords": [ "amocrm", "crm", "api", "api-wrapper", "oauth2", "AJAX", "throttling", "logging" ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [],
+    "require": {
+        "php": ">=8.5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "symfony/lock": "^8.0",
+        "symfony/cache": "^8.0",
+        "symfony/property-info": "^8.0",
+        "phpdocumentor/reflection-docblock": "^5.6",
+        "symfony/property-access": "^8.0",
+        "symfony/rate-limiter": "^8.0"
+    },
+    "require-dev": {
+        "rector/rector": "^2.3",
+        "symfony/var-dumper": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmoCRM\\": "src/AmoCRM"
+        }
+    },
+    "autoload-dev": {}
+}
